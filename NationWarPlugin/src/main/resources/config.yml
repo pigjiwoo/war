@@ -1,0 +1,32 @@
+# 국가 전쟁 플러그인 설정
+
+# 신상(Core) 기본 설정
+core:
+  # 신상 기본 체력
+  default-health: 10000
+  # 신상 크기 (블록) - 5x5x5
+  size: 5
+  # 한 번 공격당 데미지 (기본: 50, 공속 없으면 빠르게 깎임)
+  damage-per-hit: 50.0
+  # 신상 재생 시간 (초, 0 = 비활성화)
+  regeneration-time: 0
+  # 신상 재생량 (초당)
+  regeneration-amount: 10
+
+# 전쟁 설정
+war:
+  # 전쟁 시간 (분, 0 = 무제한)
+  duration: 30
+  # 전쟁 준비 시간 (초)
+  preparation-time: 60
+
+# 메시지 설정
+messages:
+  prefix: "&e[&6국가전쟁&e] &f"
+  core-created: "&a신상 '{name}'이(가) 생성되었습니다!"
+  core-removed: "&c신상 '{name}'이(가) 제거되었습니다!"
+  war-started: "&a전쟁이 시작되었습니다! 신상을 점령하세요!"
+  war-ended: "&c전쟁이 종료되었습니다!"
+  core-captured: "&b{nation} &e국가가 &6{core} &e신상을 점령했습니다!"
+  core-damaged: "&c{core} &f신상이 공격받고 있습니다! &7({health}/{max-health})"
+  core-destroyed: "&4{core} &f신상이 파괴되었습니다!"

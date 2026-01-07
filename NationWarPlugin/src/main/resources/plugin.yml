@@ -1,0 +1,22 @@
+name: NationWarPlugin
+version: 1.0
+main: com.nationwar.NationWarPlugin
+api-version: 1.20
+author: YourName
+description: 국가 전쟁 신상(Core) 시스템
+
+commands:
+  신상:
+    description: 신상 관리 명령어
+    usage: /신상 <생성|제거|목록|시작|종료|정보> [이름]
+    permission: nationwar.admin
+    aliases: [core]
+  국가:
+    description: 국가 관리 명령어
+    usage: /국가 <생성|삭제|초대|가입|탈퇴|추방|정보|목록|임원|색상>
+    aliases: [nation, n]
+
+permissions:
+  nationwar.admin:
+    description: 관리자 권한
+    default: op
